@@ -1,4 +1,4 @@
-class produto {
+public  class Produto {
     private int codigo;
     private int qtd_estoque;
     private String descricao;
@@ -7,12 +7,12 @@ class produto {
     private double margem_lucro;
 
     // Construtores
-    public produto(int codigo, String descricao){
+    public Produto(int codigo, String descricao){
         this.codigo = codigo;
         this.descricao = descricao;
     }
 
-    public produto(int codigo, String descricao, double valor, double custo, double margem_lucro){
+    public Produto(int codigo, String descricao, double valor, double custo, double margem_lucro){
         this.codigo = codigo;
         this.descricao = descricao;
         this.valor = valor;
@@ -20,7 +20,7 @@ class produto {
         this.margem_lucro = margem_lucro;
     }
 
-    public produto(int codigo, String descricao, double valor, double custo, double margem_lucro, int qtd_estoque){
+    public Produto(int codigo, String descricao, double valor, double custo, double margem_lucro, int qtd_estoque){
         this.codigo = codigo;
         this.descricao = descricao;
         this.valor = valor;
@@ -53,6 +53,14 @@ class produto {
 
     public double getMargem_lucro(){
         return margem_lucro;
+    }
+
+    public int getCodigo(){
+        return codigo;
+    }
+
+    public String getDescricao(){
+        return descricao;
     }
 
     // Metodos da classe
